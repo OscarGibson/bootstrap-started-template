@@ -29,7 +29,7 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: {
-        pug: 'src/*.pug',
+        pug: 'src/pug/pages/*.pug',
         mainJs: 'src/js/main.js',
         vendorsJs: 'src/js/vendors.js',
         style: 'src/sass/main.sass',

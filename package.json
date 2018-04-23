@@ -1,14 +1,15 @@
 {
-  "name": "foundation-project-template",
+  "name": "bootstrap-started-template",
   "version": "1.0.2",
-  "description": "Simple boilerplate Gulp + Rigger + Sass + Foundation + BrowserSync",
+  "description": "Simple boilerplate Gulp + Rigger + Sass + Bootstrap + BrowserSync",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Amir Gafurov <gafurovamir@gmail.com>",
-  "license": "ISC",
+  "author": "Ostap Hyba <ostaphuba@gmail.com>",
+  "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.1.0",
     "browser-sync": "^2.11.2",
     "gulp": "^3.8.1",
     "gulp-autoprefixer": "*",
@@ -18,7 +19,7 @@
     "gulp-pug": "^3.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "*",
-    "gulp-sass": "^2.1.1",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "*",
     "gulp-svgmin": "^1.2.2",
     "gulp-svgstore": "^5.0.5",

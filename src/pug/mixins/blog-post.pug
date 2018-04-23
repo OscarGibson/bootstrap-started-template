@@ -1,0 +1,11 @@
+mixin post_preview_element(title, subtitle, link, date, author, author_link, content)
+	div.blog-post
+		a(href= link)
+			h2.blog-post-title= title
+			h3.blog-post-subtitle= subtitle
+		p.blog-post-meta
+			span= "Posted by "
+			a(href= author_link)= author
+			span= " on "
+			span= date
+	hr

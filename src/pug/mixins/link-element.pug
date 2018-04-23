@@ -1,0 +1,7 @@
+mixin link_element(name, link, is_current)
+	if is_current == true
+		li(class="nav-item active")
+			a(class="nav-link" href=link)= name
+	else
+		li(class="nav-item")
+			a(class="nav-link" href=link)= name

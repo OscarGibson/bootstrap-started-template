@@ -1,16 +1,25 @@
-include pug/project-settings.pug
-include pug/mixins/mixins.pug
+//- include pug/project-settings.pug
+//- include pug/mixins/mixins.pug
 
-doctype html
-html
-  head(lang="en")
-    include pug/metatags.pug
-    +title('Главная')
-    include pug/styles.pug
-  body
-    include pug/svg.pug
+//- doctype html
+//- html
+//-   head(lang="en")
+//-     include pug/metatags.pug
+//-     +title('Home')
+//-     include pug/styles.pug
+//-   body
+//-     include pug/svg.pug
 
-    //- Code here
+//-     //- Code here
 
 
-    include pug/scripts.pug
+//-     include pug/scripts.pug
+
+
+extends pug/pages/base/base.pug
+
+block title
+	+title("Home")
+
+block content
+	h1 test

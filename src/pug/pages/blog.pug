@@ -1,0 +1,22 @@
+extends base/base.pug
+
+block title
+	+title("Blog")
+
+block content
+	include sections/top-menu.pug
+
+	+page_header("Title", "Subtitle", "images/blog-header-bg.jpg", "overlay")
+	
+	div.row
+		div(class= "col-lg-8 col-md-10 mx-auto")
+			each post in posts_data
+				+post_preview_element(
+					post.title,
+					post.subtitle,
+					post.link,
+					post.date,
+					post.author,
+					post.author_link,
+					post.content
+				)

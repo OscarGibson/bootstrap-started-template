@@ -1,0 +1,10 @@
+mixin page_header(title, subtitle, image_url, overlay_class)
+	header(class= "fullhead", style= "background-image: url('"+image_url+"')")
+		div(class= overlay_class)
+		div(class= "container")
+			div(class= "row")
+				div(class= "col-lg-8 col-md-10 mx-auto")
+					div(class= "fullhead-content")
+						h1(class= "fullhead-content-title")= title
+						span(class= "fullhead-content-subtitle")= subtitle
+

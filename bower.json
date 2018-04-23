@@ -1,8 +1,8 @@
 {
-  "name": "foundation-project-template",
-  "version": "1.0.2",
+  "name": "bootstrap-started-template",
+  "version": "1.0.0",
   "authors": [
-    "Amir Gafurov <gafurovamir@gmail.com>"
+    "Ostap Hyba <ostaphuba@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -11,7 +11,6 @@
     "bower_components"
   ],
   "dependencies": {
-    "foundation-sites": "6.3.0",
     "promise-polyfill": "^6.0.2"
   }
 }

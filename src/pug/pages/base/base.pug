@@ -1,0 +1,19 @@
+include ../../project-settings.pug
+include ../../mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include ../../metatags.pug
+    block title
+        +title('Main')
+    include ../../styles.pug
+    block head
+  body
+    include ../../svg.pug
+
+    block content
+
+    include ../../scripts.pug
+
+    block post-scripts
