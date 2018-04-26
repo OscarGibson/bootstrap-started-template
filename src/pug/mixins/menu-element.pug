@@ -1,0 +1,12 @@
+mixin link_element(name, link, is_current)
+	if is_current == true
+		li(class="nav-item active")
+			a(class="nav-link" href=link)= name
+	else
+		li(class="nav-item")
+			a(class="nav-link" href=link)= name
+
+mixin footer_menu_element(name, link)
+	div(class= "col-md-2 mb-3")
+		h6(class= "text-uppercase font-weight-bold")
+			a(href= link)= name

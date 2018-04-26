@@ -1,0 +1,10 @@
+extends base/base.pug
+
+block title
+	+title("Home")
+
+block content
+	include ../sections/top-menu.pug
+
+	+page_header_medium("Main page", "Subtitle", "images/blog-header-bg.jpg", "overlay")
+	

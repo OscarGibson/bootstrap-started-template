@@ -26,6 +26,7 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/images/',
+        pict: 'build/pictures',
         fonts: 'build/fonts/'
     },
     src: {
@@ -34,6 +35,7 @@ var path = {
         vendorsJs: 'src/js/vendors.js',
         style: 'src/sass/main.sass',
         img: 'src/images/**/*.*',
+        pict: 'src/pictures/**/*.*',
         pngSprite: 'src/sprite/png/',
         svgSprite: 'src/sprite/svg/**/*.svg',
         fonts: 'src/fonts/**/*.*'
@@ -45,6 +47,7 @@ var path = {
         vendorsJs: 'src/js/**/vendors.js',
         style: 'src/sass/**/*.*',
         img: 'src/images/**/*.*',
+        pict: 'src/pictures/**/*.*',
         pngSprite: 'src/sprite/png/*.png',
         svgSprite: 'src/sprite/svg/**/*.svg',
         fonts: 'src/fonts/**/*.*'
@@ -117,6 +120,12 @@ gulp.task('image:build', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('picture:build', function () {
+    gulp.src(path.src.pict)
+        .pipe(gulp.dest(path.build.pict))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('fonts:build', function () {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
@@ -169,6 +178,7 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
+    'picture:build',
     'png-sprite',
     'svg-sprite'
 ]);
@@ -188,6 +198,9 @@ gulp.task('watch', function () {
     });
     watch([path.watch.img], function (event, cb) {
         gulp.start('image:build');
+    });
+    watch([path.watch.pict], function (event, cb) {
+        gulp.start('picture:build');
     });
     watch([path.watch.pngSprite], function (event, cb) {
         gulp.start('png-sprite');
