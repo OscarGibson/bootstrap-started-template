@@ -1,0 +1,22 @@
+extends base/page.pug
+
+block title
+	+title("Post")
+
+block page-header
+
+	+page_header_medium(post.title, "", "pictures/blogging-business-coffee-34601.jpg", "overlay")
+
+block page-content
+	
+	div.row
+		div(class= "col-lg-8 col-md-10 mx-auto blog")
+			+post_element(
+				post.title,
+				post.subtitle,
+				post.link,
+				post.date,
+				post.author,
+				post.author_link,
+				post.content
+			)

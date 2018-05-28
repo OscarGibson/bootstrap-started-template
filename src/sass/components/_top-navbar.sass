@@ -1,7 +1,12 @@
 .navbar
 	background-color: $main-blue;
 
-.navbar .nav
-	&-link
-		color: $white
-		font-family: 'Anton', sans-serif
+.navbar.navbar-dark
+	.nav 
+		&-link
+			color: $white
+			font-family: 'Anton', sans-serif
+		&bar-toggler
+			border-color: $half-white
+			&:focus
+				outline: none

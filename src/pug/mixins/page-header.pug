@@ -1,5 +1,9 @@
-mixin page_header_medium(title, subtitle, image_url, overlay_class)
-	header(class= "fullhead", style= "background-image: url('"+image_url+"')")
+mixin page_header_medium(title, subtitle, image_url, overlay_class, full_size)
+	if full_size
+		- var full_size_class = "full-size"
+	else
+		- var full_size_class = ""
+	header(class= "fullhead " + full_size_class, style= "background-image: url('"+image_url+"')")
 		div(class= overlay_class)
 		div(class= "container")
 			div(class= "row")

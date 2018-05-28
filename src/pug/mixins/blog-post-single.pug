@@ -1,0 +1,10 @@
+mixin post_element(title, subtitle, link, date, author, author_link, content)
+	div.blog-post
+		h3(class= "blog-post-subtitle blog-post-subtitle-single")= subtitle
+		p(class= "blog-post-content blog-post-content-single")= content
+		p.blog-post-meta
+			span= "Posted by "
+			a(href= author_link)= author
+			span= " on "
+			span= date
+	hr
