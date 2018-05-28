@@ -6,10 +6,10 @@ html
   head(lang="en")
     include ../../metatags.pug
     block title
-        +title('Main')
+        +title("Main")
     include ../../styles.pug
     block head
-  body
+  body(class= "body")
     include ../../svg.pug
 
     block content

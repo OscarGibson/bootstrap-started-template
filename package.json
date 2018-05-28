@@ -28,6 +28,8 @@
     "gulp-watch": "*",
     "gulp.spritesmith": "^6.2.0",
     "imagemin-pngquant": "*",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1",
     "rimraf": "*"
   },
   "devDependencies": {
