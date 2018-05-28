@@ -1,6 +1,6 @@
-footer(class= "page-footer font-small indigo pt-0")
+footer(class= "page-footer footer font-small indigo pt-0")
     div(class= "container")
-        div(class= "row pt-5 mb-3 text-center d-flex justify-content-center")
+        div(class= "row pt-5 mb-3 text-center d-flex justify-content-center footer-nav")
 
             each page in menu_items
                 +footer_menu_element(page.name, page.link)
@@ -10,7 +10,7 @@ footer(class= "page-footer font-small indigo pt-0")
         div(class= "row d-flex text-center justify-content-center mb-md-0 mb-4")
 
             div(class= "col-md-8 col-12 mt-5")
-                p(style= "line-height: 1.7rem") 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,\
+                p(class="footer-content" style= "line-height: 1.7rem") 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,\
                     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae\
                     vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit\
                     aut fugit, sed quia consequuntur.'
@@ -20,7 +20,7 @@ footer(class= "page-footer font-small indigo pt-0")
         div(class= "row pb-3")
             div(class= "row pb-3")
                 div(class= "col-md-12")
-                    div(class= "mb-5 flex-center")
+                    div(class= "mb-5 flex-center footer-social")
 
                         a(class= "fb-ic")
                             i(class= "fa fa-facebook fa-lg white-text mr-md-4")
